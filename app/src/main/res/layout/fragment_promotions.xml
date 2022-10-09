@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/gray"
+    tools:context=".view.fragments.promotions.PromotionsFragment">
+
+    <include
+        android:id="@+id/fragment_promotions_promotion_banner_iv"
+        layout="@layout/promotions_banner"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardMaxElevation="10dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@color/light_gray"
+                android:src="@drawable/promotion_layer"
+                android:padding="10dp"
+                android:contentDescription="promo image" />
+
+            <TextView
+                android:id="@+id/fragment_promotions_heading_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Promotion"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:paddingTop="10dp"
+                android:paddingStart="15dp"
+                android:textColor="@color/red"/>
+
+            <TextView
+                android:id="@+id/fragment_promotions_sub_heading_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Honda Engine Parts"
+                android:paddingStart="15dp"
+                android:textSize="22dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
+
+            <TextView
+                android:id="@+id/fragment_promotions_detail_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:text="Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type s"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/fragment_promotions_actual_price_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RS,1800"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:paddingStart="15dp"/>
+
+                <TextView
+                    android:id="@+id/fragment_promotions_discount_price_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RS,1800"
+                    android:gravity="end"
+                    android:paddingEnd="15dp"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:paddingStart="15dp"/>
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:gravity="end"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="RS,"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:textColor="@color/red"-->
+<!--                        android:textSize="25dp"-->
+<!--                        android:paddingStart="15dp"/>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/fragment_promotions_discount_price_tv"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="1800"-->
+<!--                        android:gravity="start"-->
+<!--                        android:paddingEnd="15dp"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:textSize="25dp"-->
+<!--                        android:paddingStart="15dp"/>-->
+
+<!--                </LinearLayout>-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

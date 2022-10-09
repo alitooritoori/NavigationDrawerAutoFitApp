@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/adsHomeFragment"
+            android:icon="@drawable/ads_home"
+            android:title="Ads - Home"
+            />
+        <item
+            android:id="@+id/promotionsFragment"
+            android:icon="@drawable/promotions"
+            android:title="Promotions" />
+        <item
+            android:id="@+id/brandsFragment"
+            android:icon="@drawable/brands"
+            android:title="Brands" />
+
+        <item
+            android:id="@+id/productsFragment"
+            android:icon="@drawable/products"
+            android:title="Products" />
+
+        <item
+            android:id="@+id/contactUsFragment"
+            android:icon="@drawable/contact_us"
+            android:title="Contact Us" />
+
+        <item
+            android:id="@+id/rateUsFragment"
+            android:icon="@drawable/rate_us"
+            android:title="Rate Us" />
+
+        <item
+            android:id="@+id/settingsFragment"
+            android:icon="@drawable/settings"
+            android:title="Settings" />
+
+        <item
+            android:id="@+id/signInFragment"
+            android:icon="@drawable/sign_in"
+            android:title="Sign In"/>
+
+        <item
+            android:title="">
+
+            <menu>
+
+                <item
+                    android:id="@+id/ddd"
+                    android:title="My Orders"/>
+
+                <item
+                    android:id="@+id/dde"
+                    android:title="Wishlist"/>
+
+                <item
+                    android:id="@+id/ddlk"
+                    android:title="Profile"/>
+
+
+            </menu>
+        </item>
+
+
+
+    </group>
+</menu>
